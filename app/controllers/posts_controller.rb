@@ -25,7 +25,7 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
     flash[:danger] = "Your post has been deleted"
-    redirect_to user_path(@post.user)
+    redirect_to request.referer || posts_url
   end
 
   def index
