@@ -12,6 +12,7 @@ def create_like
 end
 
 def delete_like
+  allow(controller).to receive(:already_liked?).and_return(true)
   allow(controller).to receive(:current_user).and_return(user)
   delete :destroy, params: { post_id: like.post.id, id: like.id }
 end
