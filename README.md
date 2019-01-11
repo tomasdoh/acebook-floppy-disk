@@ -1,8 +1,9 @@
 # AceBook        [![Build Status](https://travis-ci.org/tomasdoh/acebook-floppy-disk.svg?branch=master)](https://travis-ci.org/tomasdoh/acebook-floppy-disk)    [![Coverage Status](https://coveralls.io/repos/github/tomasdoh/acebook-floppy-disk/badge.svg?branch=master&service=github)](https://coveralls.io/github/tomasdoh/acebook-floppy-disk?branch=master&service=github) 
 
+### [Team](https://github.com/tomasdoh/acebook-floppy-disk#team) |  [User stories](https://github.com/tomasdoh/acebook-floppy-disk#user-stories) |  [Getting started](https://github.com/tomasdoh/acebook-floppy-disk#getting-started) |  [Usage](https://github.com/tomasdoh/acebook-floppy-disk#usage) |  [Testing](https://github.com/tomasdoh/acebook-floppy-disk#testing) |   [Deployment](https://github.com/tomasdoh/acebook-floppy-disk#deployment) |   [Our approach](https://github.com/tomasdoh/acebook-floppy-disk#our-approach) |  [Contributing](https://github.com/tomasdoh/acebook-floppy-disk#contributing) 
+
 Acebook is the latest Facebook clone to hit the web, powered by Ruby on Rails and a PostgreSQL database. Try it out by signing up and making your first post! https://aqueous-wave-77193.herokuapp.com/signup
 
-### [Team](https://github.com/tomasdoh/acebook-floppy-disk#team) |  [User stories](https://github.com/tomasdoh/acebook-floppy-disk#user-stories) |  [Getting started](https://github.com/tomasdoh/acebook-floppy-disk#getting-started) |  [Usage](https://github.com/tomasdoh/acebook-floppy-disk#getting-started) |  [Running tests](https://github.com/tomasdoh/acebook-floppy-disk#running-tests) |   [Deployment](https://github.com/tomasdoh/acebook-floppy-disk#deployment) |   [Our approach](https://github.com/tomasdoh/acebook-floppy-disk#our-approach) |  [Contributing](https://github.com/tomasdoh/acebook-floppy-disk#contributing) 
 
 ## Team
 
@@ -66,7 +67,7 @@ I want my own profile page
 
 ## Getting started
 
-First, clone this repository. Then type the following commands in your Shell:
+First, clone this repository. Then type the following commands into your shell:
 
 ```bash
 > bundle install
@@ -77,7 +78,7 @@ First, clone this repository. Then type the following commands in your Shell:
 > rails s # Start the server at localhost:3000
 ```
 
-To clean your local database, use the following Shell commands:
+To clean your local database, use the following shell commands:
 
 ```
 > bin/rails db:drop
