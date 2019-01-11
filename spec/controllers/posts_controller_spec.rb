@@ -1,4 +1,5 @@
 require 'rails_helper'
+require_relative '../support/controller_test_helpers_spec.rb'
 
 RSpec.describe PostsController, type: :controller do
   let(:user) { FactoryBot.create(:user) }
@@ -34,12 +35,6 @@ RSpec.describe PostsController, type: :controller do
     end
 
     describe "POST #create" do
-      def create_global_post
-        allow(User).to receive(:find).and_return(user)
-        get :index
-        post :create, params: { post: { id: test_post.id, message: test_post.message, user_id: "" } }
-      end
-
       it "responds creates a post in db" do
         expect { create_global_post }.to change { Post.count }.by(1)
       end
@@ -47,13 +42,6 @@ RSpec.describe PostsController, type: :controller do
       it "creates redirects to posts url" do
         create_global_post
         expect(response).to redirect_to posts_url
-      end
-
-      def create_timeline_post
-        timeline = FactoryBot.create(:timeline)
-        user_with_timeline = FactoryBot.create(:user, timeline: timeline)
-        allow(User).to receive(:find).and_return(user_with_timeline)
-        post :create, params: { post: { id: test_post.id, message: test_post.message, user_id: timeline.user.id } }
       end
 
       it "responds creates a post in db" do
@@ -75,10 +63,6 @@ RSpec.describe PostsController, type: :controller do
 
     describe "DELETE #destroy" do
       let!(:post_in_db) { FactoryBot.create(:post) }
-
-      def delete_post
-        delete :destroy, params: { id: post_in_db.id }
-      end
 
       it "deletes a post from db" do
         expect { delete_post }.to change { Post.count }.by(-1)
