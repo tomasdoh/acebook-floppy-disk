@@ -4,14 +4,6 @@
 
 Acebook is the latest Facebook clone to hit the web, powered by Ruby on Rails and a PostgreSQL database. Try it out by signing up and making your first post! https://aqueous-wave-77193.herokuapp.com/signup
 
-#### Sign-up
-![Signup](https://i.imgur.com/JAGWWJl.png)
-#### User profile
-![User profile](https://i.imgur.com/Iha9dZy.png)
-#### News feed
-![News feed](https://i.imgur.com/uFIixIk.png)
-#### Check out the other users
-![Other users](https://i.imgur.com/0L3wQQT.gif)
 
 ## Team
 
@@ -23,7 +15,7 @@ Acebook is the latest Facebook clone to hit the web, powered by Ruby on Rails an
 
 ## User Stories
 
-All of the user stories used to develop the project can be found [here](./user-stories.md).
+All of the user stories that have helped shape this project can be found [here](./user-stories.md).
 
 ## Getting started
 
@@ -48,8 +40,6 @@ To clean your local database, use the following shell commands:
 ## Usage
 
 You can sign up to use Acebook on the [homepage](https://aqueous-wave-77193.herokuapp.com). To change your avatar, register your email address at [Gravatar](https://en.gravatar.com) and follow the instructions to upload your chosen image.
-
-
 
 ## Our approach
 
